@@ -9,18 +9,7 @@ get_header(); ?>
 
             <?php /* The loop */ ?>
             <?php while ( have_posts() ) : the_post(); ?>
-
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <header class="entry-header">
-                        <?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
-                        <div class="entry-thumbnail">
-                            <?php the_post_thumbnail(); ?>
-                        </div>
-                        <?php endif; ?>
-
-                        <h1 class="entry-title"><?php the_title(); ?></h1>
-                    </header><!-- .entry-header -->
-
                     <div class="entry-content">
                         <?php the_content(); ?>
                         <?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
@@ -56,18 +45,21 @@ get_header(); ?>
                             <span class="ic-plus-big"></span>
                         </div>
 
+                        <div class="banner-como-trabajamos">
+                        <h2>Como trabajamos <span>Paso a paso</span></h2>
+                            <img src="<?php echo get_bloginfo('template_url'); ?>/images/banner-como-trabajamos.jpg" alt="Como trabajamos" />
+                        </div>
+
                         <div class="brands-content">
                             <h3>Marcas que confían en nosotros</h3>
                             <div class="brands">
-                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/brands/chungo-logo.jpg" alt="chungo" />
-                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/brands/cremolatti-logo.jpg" alt="chungo" />
-                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/brands/moratto-logo.jpg" alt="chungo" />
-                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/brands/persicco-logo.jpg" alt="chungo" />
-                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/brands/veneciana-logo.jpg" alt="chungo" />
-                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/brands/cremolatti-logo.jpg" alt="chungo" />
-                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/brands/moratto-logo.jpg" alt="chungo" />
-                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/brands/persicco-logo.jpg" alt="chungo" />
-                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/brands/veneciana-logo.jpg" alt="chungo" />
+                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/brands/vual-logo.jpg" alt="Vual" />
+                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/brands/natura-logo.jpg" alt="Natura" />
+                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/brands/kosiuko-logo.jpg" alt="Kosiuko" />
+                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/brands/coca-cola-logo.jpg" alt="Coca-Cola" />
+                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/brands/bayer-logo.jpg" alt="Bayer" />
+                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/brands/arcor-logo.jpg" alt="Arcor" />
+                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/brands/cremolatti-logo.jpg" alt="Cremolatti" />
                             </div>
                         </div>
 
