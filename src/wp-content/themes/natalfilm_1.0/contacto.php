@@ -4,8 +4,6 @@
 */
 get_header(); ?>
 
- <script src="https://maps.googleapis.com/maps/api/js"></script>
-
     <div id="primary" class="content-area home-page">
         <div id="content" class="site-content" role="main">
 
@@ -28,42 +26,28 @@ get_header(); ?>
                                 </div>
                             </div>
                             <div class="contenido">
-                                <div id="map" style="width: 500px;height: 500px;"></div>
+                                <?php the_content(); ?>
                             </div>
                         </div>
-                        <div class="sidebar">
+                        <?php if (!function_exists(dynamic_sidebar) || !dynamic_sidebar('marca')) : ?>
                             
-                        </div>
+                        <?php endif;?>
                     </div><!-- .entry-content -->
 
                     <footer class="entry-meta">
                         <?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
                     </footer><!-- .entry-meta -->
+                    <?php if ( is_active_sidebar( 'marcas' ) ) : ?>
+                        <div class="menu-marcas-content clear">
+                            <?php dynamic_sidebar( 'marcas' ); ?>
+                        </div><!-- #tertiary -->
+                    <?php endif; ?>
                 </article><!-- #post -->
 
-                <?php comments_template(); ?>
             <?php endwhile; ?>
 
         </div><!-- #content -->
     </div><!-- #primary -->
- <script type="text/javascript">
-     function initMap() {
-       var myLatLng = {lat: -25.363, lng: 131.044};
 
-       // Create a map object and specify the DOM element for display.
-       var map = new google.maps.Map(document.getElementById('map'), {
-         center: myLatLng,
-         scrollwheel: false,
-         zoom: 4
-       });
-
-       // Create a marker and set its position.
-       var marker = new google.maps.Marker({
-         map: map,
-         position: myLatLng,
-         title: 'Hello World!'
-       });
-     }
-</script>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
