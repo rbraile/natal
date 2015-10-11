@@ -16,12 +16,14 @@
                 <h4>Contactanos</h4>
                 <p class="contacto">+54 11 4747 2815</p>
                 <p class="contacto">info@natalfilm.com.ar</p>
-                <p>Dirección</p>         
-                <p>-</p>         
-                <p>Gervasio Posadas 1437</p>         
-                <p>B1643FUC Beccar</p>
-                <p>Buenos Aires. Argentina</p>
-                <p>@ Todos los derechos reservados. Natalfilm de Sertrafo SA, 2015</p>
+                <div class="address">
+                    <p>Dirección</p>         
+                    <p>-</p>         
+                    <p>Gervasio Posadas 1437</p>         
+                    <p>B1643FUC Beccar</p>
+                    <p>Buenos Aires. Argentina</p>
+                </div>
+                <p class="copy-right">@ Todos los derechos reservados. Natalfilm de Sertrafo SA, 2015</p>
             </div>
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
