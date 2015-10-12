@@ -41,7 +41,7 @@
 }
 
 #menu-menu-principal #menu-item-9 a {
-    color: #fff;
+    color: #9b9b9b;
     padding: 0 16px;
     margin-right: 0;
     text-align: center;
@@ -266,62 +266,144 @@ div.nav > ul {
 
 /* como trabajamos */
 
-.page-template-como-trabajamos .contenido {
-    background: #fff;
-    padding: 40px;
+.page-template-como-trabajamos .left-col {
+    width: 100%;
 }
-.page-template-como-trabajamos .contenido h3 {
+
+.page-template-como-trabajamos .contenido .left {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    padding: 40px;
+    width: 670px;
+}
+
+.page-template-como-trabajamos .contenido .left > h3 {
     margin: 0;
     color: #5fa099;
     padding-bottom: 20px;
     border-bottom: 1px solid #c9c9c9;
-    font-size: 16px;
-    font-weight: normal;
+    font: normal 18px 'Signika-Regular';
+
 }
 
 .page-template-como-trabajamos .contenido .content-images {
-    margin-top: 40px;
-    background: url("../images/como_trabajamos.jpg") no-repeat;
-    min-height: 1340px;
     position: relative;
+}
+
+.page-template-como-trabajamos .contenido .img-background {
+    margin-top: 50px;
 }
 
 .page-template-como-trabajamos .contenido .content-images .text {
     width: 520px;
-    padding-left: 20px;
+    padding: 0;
     position: absolute;
 }
 
+.page-template-como-trabajamos .contenido .content-images .text p {
+    font-size: 14px;
+    font-family: 'Signika-Light';
+    color: #707070;
+}
+
+.page-template-como-trabajamos .contenido .content-images .text p:first-child {
+    font-size: 24px;
+    font-family: 'Signika-Regular';
+    margin-bottom: 0;
+    padding: 0;
+    color: #22384e;
+}
+
 .page-template-como-trabajamos .contenido .content-images .text1 {
-    top: 10px;
     left: 236px;
+    top: 74px;
 }
 
 .page-template-como-trabajamos .contenido .content-images .text2 {
-    top: 264px;
-    left: 20px;
-    width: 300px;
-    text-align: right;
-}
-
-.page-template-como-trabajamos .contenido .content-images .text3 {
-    top: 600px;
-    left: 348px;
-    width: 300px;
-}
-
-.page-template-como-trabajamos .contenido .content-images .text4 {
-    top: 890px;
+    top: 340px;
     left: 0;
     width: 300px;
     text-align: right;
 }
 
+.page-template-como-trabajamos .contenido .content-images .text3 {
+    top: 650px;
+    left: 378px;
+    width: 300px;
+}
+
+.page-template-como-trabajamos .contenido .content-images .text4 {
+    top: 972px;
+    left: -36px;
+    width: 300px;
+    text-align: right;
+}
+
 .page-template-como-trabajamos .contenido .content-images .text5 {
-    top: 1170px;
+    top: 1208px;
     left: 224px;
     width: 370px;
 }
+
+.page-template-como-trabajamos .sidebar {
+    float: right;
+    width: 240px;
+}
+
+.page-template-como-trabajamos .contant-list {
+    width: 100%;
+}
+
+.page-template-como-trabajamos .contant-list h3 {
+    padding-left: 8px;
+}
+
+.page-template-como-trabajamos .content-medios {
+    background: #fff;
+}
+
+.page-template-como-trabajamos .content-medios .img-left {
+    float: left;
+    width: 60px;
+}
+
+.page-template-como-trabajamos .contant-list a,
+.page-template-como-trabajamos .contant-list p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Signika-Regular';
+    font-size: 14px;
+    color: #000;
+}
+
+.page-template-como-trabajamos .content-medios .text-right a {
+    color: #9b9b9b;
+    background: url("../images/ic-descarga.png") left center no-repeat;
+    padding-left: 8px;
+    font-size: 11px;
+}
+
+.page-template-como-trabajamos .contant-list .content-img {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.page-template-como-trabajamos .content-medios li {
+    border-bottom: 2px solid #f5f5f5;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.page-template-como-trabajamos .content-medios li:last-child {
+    border-bottom: none;
+}
+
+.page-template-como-trabajamos .content-medios li:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
 
 /* home page */
 
@@ -463,10 +545,10 @@ div.nav > ul {
 .contant-list h3 {
     background: #e7b952;
     color: #fff;
-    font-family: 'Signika-Semibold';
+    font-family: 'Signika-Regular';
     font-size: 18px;
     margin: 0;
-    padding: 10px 0 0 20px;
+    padding: 10px 0 4px 20px;
 }
 
 .contant-list ul {
