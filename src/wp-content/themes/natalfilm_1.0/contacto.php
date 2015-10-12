@@ -29,9 +29,7 @@ get_header(); ?>
                                 <?php the_content(); ?>
                             </div>
                         </div>
-                        <?php if (!function_exists(dynamic_sidebar) || !dynamic_sidebar('marca')) : ?>
-                            
-                        <?php endif;?>
+                        
                     </div><!-- .entry-content -->
 
                     <footer class="entry-meta">
