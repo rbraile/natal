@@ -591,3 +591,190 @@ div.nav > ul {
     padding: 10px 80px 10px 20px;
     position: relative;
 }
+
+/* Desarrollos*/
+
+.page-template-desarrollos .content-area {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.page-template-desarrollos .site-content {
+    width: 700px;
+    float: left;
+}
+.category-desarrollos .left-col {
+    width: 700px;
+}
+
+.category-desarrollos .contenido img {
+    float: left;
+    margin: 0;
+    width: 378px;
+}
+
+.category-desarrollos .content-title {  
+    float: right;
+    width: 310px;
+    padding-left: 8px;
+}
+
+.category-desarrollos .content-title h2 {  
+    font-family: 'Signika-Regular';
+    font-size: 24px;
+    margin: 30px 0 0;
+    color: #22384e;
+}   
+
+.category-desarrollos .content-title h4 {  
+    font-size: 18px;
+    margin-top: 0;
+    color: #22384e;
+}
+
+.category-desarrollos .contenido > ul {
+    width: 310px;
+    float: left;
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.category-desarrollos .contenido > ul li {
+    font-size: 14px;
+    font-family: 'Signika-Light';
+    padding-left: 8px; 
+    background: url("../images/dot.jpg") left 9px no-repeat; 
+}
+
+.page-template-desarrollos article.category-desarrollos {
+    border-bottom: 2px solid #f5f5f5;
+    background: #fff;
+}
+
+.page-template-desarrollos article.category-desarrollos:last.child {
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.page-template-desarrollos .title-content h1.entry-title {
+    background: #fff;
+    color: #5fa099;
+    float:left;
+    font-family: 'Signika-Regular';
+    font-size: 28px;
+    margin-bottom: 0;
+    padding: 20px 0 10px 10px;
+    width: 270px;
+}
+
+.page-template-desarrollos .title-content .frase {
+    font-size: 21px;
+    font-family: 'Signika-Regular';
+    float:left;
+    color: #9b9b9b;
+    margin-left: 10px;
+}
+
+.page-template-desarrollos .sidebar {
+    width: 230px;
+    padding-top: 65px;
+}
+
+.page-template-desarrollos .sidebar h4 {
+    margin: 0;
+    background: #5fa090;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Signika-Semibold';
+    padding: 10px 0 4px 20px;
+}
+
+.page-template-desarrollos .sidebar .content-img {
+    width: 230px;
+    background: #fff;
+    border-top: 8px solid #f5f5f5;
+}
+
+.page-template-desarrollos .sidebar .content-subcat {
+    background: #fff;
+}
+
+.page-template-desarrollos .sidebar .content-subcat ul {
+    list-style: none;
+    padding: 0 0 0 0;
+}
+
+.page-template-desarrollos .sidebar .content-subcat .filtros-rubro,
+.page-template-desarrollos .sidebar .content-subcat .filtros {
+    border-bottom: 2px solid #f5f5f5;
+    padding: 20px 0 20px 40px;
+    margin: 0;
+}
+
+.filtros-rubro li a,
+.filtros li a {
+    color: #333;
+    font-family: 'Signika-Light';
+    font-size: 18px;
+    background: url('../images/ic-filtro-menos.jpg') left center no-repeat;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.filtros-rubro li a.selected,
+.filtros li a.selected {
+    color: #9b9b9b;
+    background: url('../images/ic-filtro-mas.jpg') left center no-repeat;
+}
+
+.filtros-rubro li.categories,
+.filtros li.categories {
+    color: #5fa099;
+    font-family: 'Signika-Bold';
+    font-size: 18px;
+}
+
+.tipo-hide,
+.rubro-hide {
+    display: none;
+}
+
+.page-template-desarrollos .destacada {
+    background: #c7c7c7;
+}
+
+.page-template-desarrollos .destacada img {
+    float: left;
+}
+
+.page-template-desarrollos .destacada .content-title h4 {
+    font-size: 38px;
+    font-family: 'Signika-Regular';
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}
+
+.page-template-desarrollos .destacada .entry-title {
+    font-size: 38px;
+    font-family: 'Signika-Regular';
+    color: #5fa099;
+    text-shadow: 2px 2px #000;
+}
+
+.page-template-desarrollos .destacada {
+    position: relative;
+}
+
+.page-template-desarrollos .destacada .box-color {
+    background:  #41e0cc;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 322px;
+    height: 30px;
+}
+
+.page-template-desarrollos .content-list article:first-child {
+    padding-top: 50px;
+}
+
