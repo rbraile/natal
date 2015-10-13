@@ -1,41 +1,43 @@
 <?php
 /**
- * The template for displaying Category pages
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
- */
-
+* Template Name: como-trabajamos 
+*/
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+    <div id="primary" class="content-area home-page">
+        <div id="content" class="site-content" role="main">
+            <?php /* The loop */ ?>
+            <?php while ( have_posts() ) : the_post(); ?>
+                <?php if( in_category('Desarrollos')): ?>
+                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                        <div class="entry-content clear">
+                            <?php //the_content(); ?>
+                            <?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+                            <div class="left-col">
+                                <div class="contenido clear">
+                                    <div class="content-title">
+                                        <h2 class="entry-title">
+                                            <?php the_title();?>
+                                        </h2>
+                                        <h4><?php echo get_post_meta($post->ID, "fecha", true); ?></h4>
+                                    </div>
+                                    <?php the_content();?>
+                                </div>
+                            </div>
+                        </div><!-- .entry-content -->
+                    </article><!-- #post -->
+                <?php endif;?>
+            <?php endwhile; ?>
 
-		<?php if ( have_posts() ) : ?>
-			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'twentythirteen' ), single_cat_title( '', false ) ); ?></h1>
+                <footer class="entry-meta">
+                    <?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+                </footer><!-- .entry-meta -->
+        </div><!-- #content -->
+        <div class="sidebar">
+            
+        </div>
+    </div><!-- #primary -->
 
-				<?php if ( category_description() ) : // Show an optional category description ?>
-				<div class="archive-meta"><?php echo category_description(); ?></div>
-				<?php endif; ?>
-			</header><!-- .archive-header -->
-
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
-			<?php endwhile; ?>
-
-			<?php twentythirteen_paging_nav(); ?>
-
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
+
+

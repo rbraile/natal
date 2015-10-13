@@ -8,7 +8,7 @@ get_header(); ?>
         <div id="content" class="site-content" role="main">
 
             <?php /* The loop */ ?>
-            <?php while ( have_posts() ) : the_post(); ?>
+            <?php if ( have_posts() ) : the_post(); ?>
 
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -42,7 +42,7 @@ get_header(); ?>
                     <?php endif; ?>
                 </article><!-- #post -->
 
-            <?php endwhile; ?>
+            <?php endif; ?>
 
         </div><!-- #content -->
     </div><!-- #primary -->

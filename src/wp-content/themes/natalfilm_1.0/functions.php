@@ -572,6 +572,19 @@ function estilos_theme() {
 }
 add_action('wp_print_styles', 'estilos_theme');
 
+function wpb_adding_scripts() {
+     wp_enqueue_script( 'filtros-custom', 
+    get_template_directory_uri() . '/js/filtros.js', array('jquery'), '1.0.0', true );
+
+
+    wp_register_script('filtros-custom', get_template_directory_uri() . '/js/filtros.js', 
+        array('jquery'),'1.0', true);
+    wp_enqueue_script('filtros-custom');
+}
+
+add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' );
+
+
 class description_walker extends Walker_Nav_Menu
 {
   function start_el(&$output, $item, $depth, $args)
@@ -612,3 +625,34 @@ class description_walker extends Walker_Nav_Menu
         $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
         }
 }
+
+add_filter('wp_list_categories', 'add_slug_class_wp_list_categories');
+function add_slug_class_wp_list_categories($list) {
+
+$cats = get_categories('hide_empty=0');
+    foreach($cats as $cat) {
+        $find = 'cat-item-' . $cat->term_id . '"';
+        $replace = 'cat-item-' . $cat->slug . '"';
+        $list = str_replace( $find, $replace, $list );
+        $find = 'cat-item-' . $cat->term_id . ' ';
+        $replace = 'cat-item-' . $cat->slug . ' cat-item-' . $cat->term_id . ' ';
+        $list = str_replace( $find, $replace, $list );
+    }
+
+return $list;
+}
+
+function catch_that_image() {
+  global $post, $posts;
+  $first_img = '';
+  ob_start();
+  ob_end_clean();
+  $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+  $first_img = $matches[1][0];
+
+  if(empty($first_img)) {
+    $first_img = "/path/to/default.png";
+  }
+  return $first_img;
+}
+

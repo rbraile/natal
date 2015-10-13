@@ -16,7 +16,7 @@ get_header(); ?>
                     
                         <div class="top-images clear">
                             <div class="images-left">
-                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/home-big-left.jpg"> 
+                                <img src="<?php echo get_bloginfo('template_url'); ?>/images/home-big-left.jpg" /> 
                                 <div class="double-row clear">
                                     <div class="double-row-first">
                                         <img src="<?php echo get_bloginfo('template_url'); ?>/images/logo-home-square.png">    
