@@ -1,0 +1,875 @@
+a {
+    cursor: pointer;
+}
+
+#page {
+    background: #f5f5f5;
+}
+
+#masthead { 
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.ic-plus-big {
+    background: url("../images/plus-big.png") no-repeat;
+    bottom: 10px;
+    display: block;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    width: 20px;
+}
+
+.content-header {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+
+#masthead a.home-link{
+    background: url("../images/logo.png") no-repeat;
+    display: block;
+    text-indent: -9999em;
+    float: left;
+    width: 266px;
+    min-height: 34px;
+}
+
+/* menu */
+
+#menu-menu-principal #menu-item-9 {
+    background: #41e0cc;
+    border-radius: 10px 10px 0 0;           
+    padding-top: 5px;
+}
+
+#menu-menu-principal #menu-item-9 a {
+    color: #fff;
+    padding: 0 16px;
+    margin-right: 0;
+    text-align: center;
+}
+
+#menu-menu-principal #menu-item-9 a span {
+    display: none;
+}
+
+#site-navigation {
+    width: 940px;
+}
+
+.navbar {
+    background: #f5f5f5;
+}
+
+ul.nav, 
+div.nav > ul {
+    background: #f5f5f5;
+    padding: 0;
+    text-align: right;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav li a {
+    position: relative;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+
+.nav li a,
+.nav .current_page_ancestor > a, 
+.nav .current-menu-ancestor > a {
+    color: #9b9b9b;
+    font-family: 'Signika-Regular';
+    font-size: 18px; 
+}
+
+.nav li a span {
+    background: url('../images/ic-menu.png') no-repeat bottom center; 
+    width: 13px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.nav .current_page_item > a,
+.nav .current-menu-item > a,
+.nav li:hover > a,
+.nav li a:hover,
+.nav li:focus > a,
+.nav li a:focus {
+    background: none;
+    color: #84b5b0;
+    font-family: 'Signika-Regular';
+    font-size: 18px; 
+}
+
+
+.nav .menu-item a:hover span,
+.nav .current-menu-item a span {
+    background-position: top; 
+}
+
+/* menu marcas*/
+
+.menu-marcas-content {
+    margin-bottom: 40px;
+}
+
+.menu-marcas-content ul.menu::after {
+    background: #5fa099 none repeat scroll 0 0;
+    box-sizing: border-box;
+    color: #fff;
+    content: "Maras que confian en nosotros";
+    display: block;
+    float: right;
+    font-family: 'Signika-Regular';
+    font-size: 24px;
+    height: 210px;
+    line-height: 20px;
+    padding: 120px 32px 0 20px;
+    vertical-align: bottom;
+    width: 230px;
+}
+
+.menu-marcas-content ul.menu {
+
+}
+
+.menu-marcas-content .widget_nav_menu {
+    padding: 0;
+}
+
+.menu-marcas-content ul.menu li {
+    background: #fff url(../images/plus-big-light-blue.png) no-repeat right 10px bottom 10px;
+    float: right;
+    height: 210px;
+    padding: 0;
+    margin-right: 2px; 
+    text-align: center;
+    white-space: nowrap;
+    width: 230px;
+    position: relative;
+}
+
+.menu-marcas-content ul.menu li:first-child {
+    margin-right: 0;    
+}
+
+/*.menu-marcas-content ul.menu li:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    margin-right: -0.25em;
+    vertical-align: middle;
+}*/
+
+.menu-marcas-content ul.menu li a {
+    display: inline-block;
+    height: 210px;
+    width: 230px;
+    padding-top: 36px;
+    box-sizing: border-box;
+}
+
+.menu-marcas-content ul.menu li a:after {
+    bottom: 10px;
+    color: #000;
+    content: "Ver detalle de desarrollo";
+    left: 10px;
+    position: absolute;
+}
+
+.menu-marcas-content ul.menu li a img {
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+
+/* menu marcas*/
+
+/* footer */
+
+.site-footer {
+    background: #fff;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer-content p {
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+.footer-content h4 {
+    color: #000;
+    font: normal 18px 'Signika-Regular';
+    margin: 0;
+}
+
+.footer-content .contacto {
+    color: #84b5b0;
+    font-family: 'Signika-Regular';
+    font-size: 18px;
+}
+
+.footer-content .address {
+    padding-top: 25px;
+}
+
+.footer-content .address p {
+    font-family: 'Signika-Light';
+    font-size: 14px;
+}
+
+.footer-content .copy-right {
+    margin-top: 50px;
+    font-family: 'Signika-Light';
+    font-size: 12px;
+}
+
+.left-col {
+    float: left;
+    width: 800px;
+}
+
+.left-col .title-content h1.entry-title {
+    background: #5fa099;
+    color: #fff;
+    float:left;
+    font-family: 'Signika-Regular';
+    font-size: 28px;
+    margin-bottom: 0;
+    padding: 20px 0 10px 10px;
+    width: 270px;
+}
+
+.left-col .title-content .frase {
+    font-size: 21px;
+    font-family: 'Signika-Regular';
+    float:left;
+    color: #9b9b9b;
+    margin-left: 10px;
+}
+
+.sidebar {
+    float: right;
+    width: 140px;
+}
+
+/* como trabajamos */
+
+.page-template-como-trabajamos .left-col {
+    width: 100%;
+}
+
+.page-template-como-trabajamos .contenido .left {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    padding: 40px;
+    width: 670px;
+}
+
+.page-template-desarrollos .title-content h1.entry-title {
+    background: #5fa099;
+    color: #fff;
+    float:left;
+    font-family: 'Signika-Regular';
+    font-size: 28px;
+    margin-bottom: 0;
+    padding: 20px 0 10px 10px;
+    width: 270px;
+}
+
+.page-template-como-trabajamos .contenido .left > h3 {
+    margin: 0;
+    color: #5fa099;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c9c9c9;
+    font: normal 18px 'Signika-Regular';
+
+}
+
+.page-template-como-trabajamos .contenido .content-images {
+    position: relative;
+}
+
+.page-template-como-trabajamos .contenido .img-background {
+    margin-top: 50px;
+}
+
+.page-template-como-trabajamos .contenido .content-images .text {
+    width: 520px;
+    padding: 0;
+    position: absolute;
+}
+
+.page-template-como-trabajamos .contenido .content-images .text p {
+    font-size: 14px;
+    font-family: 'Signika-Light';
+    color: #707070;
+}
+
+.page-template-como-trabajamos .contenido .content-images .text p:first-child {
+    font-size: 24px;
+    font-family: 'Signika-Regular';
+    margin-bottom: 0;
+    padding: 0;
+    color: #22384e;
+}
+
+.page-template-como-trabajamos .contenido .content-images .text1 {
+    left: 236px;
+    top: 74px;
+}
+
+.page-template-como-trabajamos .contenido .content-images .text2 {
+    top: 340px;
+    left: 0;
+    width: 300px;
+    text-align: right;
+}
+
+.page-template-como-trabajamos .contenido .content-images .text3 {
+    top: 650px;
+    left: 378px;
+    width: 300px;
+}
+
+.page-template-como-trabajamos .contenido .content-images .text4 {
+    top: 972px;
+    left: -36px;
+    width: 300px;
+    text-align: right;
+}
+
+.page-template-como-trabajamos .contenido .content-images .text5 {
+    top: 1208px;
+    left: 224px;
+    width: 370px;
+}
+
+.page-template-como-trabajamos .sidebar {
+    float: right;
+    width: 240px;
+}
+
+.page-template-como-trabajamos .contant-list {
+    width: 100%;
+}
+
+.page-template-como-trabajamos .contant-list h3 {
+    padding-left: 8px;
+}
+
+.page-template-como-trabajamos .content-medios {
+    background: #fff;
+}
+
+.page-template-como-trabajamos .content-medios .img-left {
+    float: left;
+    width: 60px;
+}
+
+.page-template-como-trabajamos .contant-list a,
+.page-template-como-trabajamos .contant-list p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Signika-Regular';
+    font-size: 14px;
+    color: #000;
+}
+
+.page-template-como-trabajamos .content-medios .text-right a {
+    color: #9b9b9b;
+    background: url("../images/ic-descarga.png") left center no-repeat;
+    padding-left: 8px;
+    font-size: 11px;
+}
+
+.page-template-como-trabajamos .contant-list .content-img {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.page-template-como-trabajamos .content-medios li {
+    border-bottom: 2px solid #f5f5f5;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.page-template-como-trabajamos .content-medios li:last-child {
+    border-bottom: none;
+}
+
+.page-template-como-trabajamos .content-medios li:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+/* home page */
+
+.page-template-home-page .content-header .frase {
+    font-family: 'Signika-Light';
+    font-size: 14px;
+    color: #969696;
+    float: left;
+    border-left: 1px solid #969696;
+    margin-left: 22px;
+    padding-left: 10px;
+    line-height: 15px;lim 
+}
+
+.home-page .site-content {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.home-page p,
+.home-page img {
+    margin: 0;
+}
+
+.home-page ul {
+    margin: 0;
+}
+
+.home-page .content-image {
+    position: relative;
+}
+
+.home-page .content-image p {
+    position: absolute;
+    font-family: 'Signika-Regular';
+    font-size: 34px;
+    top: 26px;
+    left: 26px;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}
+
+.home-page .content-image p span {
+    font-family: 'Signika-Bold';
+}
+
+.home-page .content-image p.no-position {
+    position: inherit;
+    left: inherit;
+    top: inherit;
+}
+
+.images-right {
+    float: right;
+    background: #c6c6c6;
+    position: relative;
+    width: 470px;
+}
+
+.images-right h3 {
+    color: #5fa099;
+    padding-left: 22px;
+}
+
+.images-left {
+    float: left;
+}
+
+.entry-header,
+.entry-content,
+.entry-summary, 
+.entry-meta {
+    max-width: inherit;
+}
+
+.top-images {
+    min-height: 361px; 
+    background: #5fa099;
+}
+
+.double-row-first {
+    background: #fff;
+    width: 50%;
+    float: left;
+    padding: 40px 0 41px;
+}
+
+.double-row-first img {
+    margin: 0 auto;
+    display: block;
+}
+
+.double-row-last {
+    width: 50%;
+    float: left;
+    padding-left: 20px;
+    position: relative;
+    height: 219px;
+}
+
+.double-row-last h3 {
+    color: #fff;
+    font-weight: bold;
+}
+.double-row-last h3 a {
+    display: block;
+    font-weight: normal;
+    color: #22384e;
+}
+
+.double-row-last h3 a:hover {
+    color: #22384e;
+}
+
+.banner-middle {
+    background: #22384e;
+    margin: 20px 0;
+    padding: 20px 124px;
+    position: relative;
+}
+
+.banner-middle p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+.brands-content {
+    background: #fff;
+    padding: 20px;
+}
+
+.brands-content h3 {
+    color: #5fa099; 
+}
+
+.brands-content .brands {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.brands-content .brands img {
+    margin: 0 22px;
+}
+
+.banner-como-trabajamos {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.banner-como-trabajamos h2 {
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    margin: 0;
+}
+
+.banner-como-trabajamos h2 span {
+    font-weight: bold;
+    color: #22384e;
+    display: block;    
+}
+
+/* pagina de contanto */
+
+.page-template-contacto .left-col {
+    width: 100%;
+}
+
+.page-template-contacto .left-col .title-content h1.entry-title {
+    background: #fff;
+    color: #5fa099;
+}
+
+.map-content {
+    float: left;
+}
+
+.contant-list {
+    float: right;
+    width: 230px;
+}
+
+.contant-list h3 {
+    background: #e7b952;
+    color: #fff;
+    font-family: 'Signika-Regular';
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 0 4px 20px;
+}
+
+.contant-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+.contant-list .content-medios > li:first-child  {
+    padding-top: 10px;
+}
+
+.contant-list:first-child ul {
+    padding-top: 20px;
+}
+
+.contant-list ul li {
+    color: #5fa099;
+    font-size: 18px;
+    font-family: 'Signika-Regular';
+}
+
+.contant-list > ul li {
+    background: #fff;
+    margin-bottom: 1px; 
+    padding: 5px 0 0 10px;
+}
+
+.contant-list ul .title {
+    font-size: 14px;
+    font-family: 'Signika-Light';
+    color: #000;
+}
+
+.submapa {
+    background: #00e9d5;
+    float: right;
+    font-family: 'Signika-Light';
+    font-size: 14px;
+    padding: 10px 80px 10px 20px;
+    position: relative;
+}
+
+/* Desarrollos*/
+
+.page-template-empresa .content-area,
+.page-template-desarrollos .content-area {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.page-template-empresa .site-content,
+.page-template-desarrollos .site-content {
+    width: 700px;
+    float: left;
+}
+.category-desarrollos .left-col {
+    width: 700px;
+}
+
+.category-desarrollos .contenido img {
+    float: left;
+    margin: 0;
+    width: 378px;
+}
+
+.category-desarrollos .content-title {  
+    float: right;
+    width: 310px;
+    padding-left: 8px;
+}
+
+.category-desarrollos .content-title h2 {  
+    font-family: 'Signika-Regular';
+    font-size: 24px;
+    margin: 30px 0 0;
+    color: #22384e;
+}   
+
+.category-desarrollos .content-title h4 {  
+    font-size: 18px;
+    margin-top: 0;
+    color: #22384e;
+}
+
+.category-desarrollos .contenido > ul {
+    width: 310px;
+    float: left;
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.category-desarrollos .contenido > ul li {
+    font-size: 14px;
+    font-family: 'Signika-Light';
+    padding-left: 8px; 
+    background: url("../images/dot.jpg") left 9px no-repeat; 
+}
+
+.page-template-desarrollos article.category-desarrollos {
+    border-bottom: 2px solid #f5f5f5;
+    background: #fff;
+}
+
+.page-template-desarrollos article.category-desarrollos:last.child {
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.page-template .title-content h1.entry-title {
+    background: #fff;
+    color: #5fa099;
+    float:left;
+    font-family: 'Signika-Regular';
+    font-size: 28px;
+    margin-bottom: 0;
+    padding: 20px 0 10px 10px;
+    width: 270px;
+}
+
+.page-template .title-content .frase {
+    font-size: 21px;
+    font-family: 'Signika-Regular';
+    float:left;
+    color: #9b9b9b;
+    margin-left: 10px;
+}
+
+.page-template-desarrollos .sidebar {
+    width: 230px;
+    padding-top: 65px;
+}
+
+.page-template-desarrollos .sidebar h4 {
+    margin: 0;
+    background: #5fa090;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Signika-Semibold';
+    padding: 10px 0 4px 20px;
+}
+
+.page-template-desarrollos .sidebar .content-img {
+    width: 230px;
+    background: #fff;
+    border-top: 8px solid #f5f5f5;
+}
+
+.page-template-desarrollos .sidebar .content-subcat {
+    background: #fff;
+}
+
+.page-template-desarrollos .sidebar .content-subcat ul {
+    list-style: none;
+    padding: 0 0 0 0;
+}
+
+.page-template-desarrollos .sidebar .content-subcat .filtros-rubro,
+.page-template-desarrollos .sidebar .content-subcat .filtros {
+    border-bottom: 2px solid #f5f5f5;
+    padding: 20px 0 20px 40px;
+    margin: 0;
+}
+
+.filtros-rubro li a,
+.filtros li a {
+    color: #333;
+    font-family: 'Signika-Light';
+    font-size: 18px;
+    background: url('../images/ic-filtro-menos.jpg') left center no-repeat;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.filtros-rubro li a.selected,
+.filtros li a.selected {
+    color: #9b9b9b;
+    background: url('../images/ic-filtro-mas.jpg') left center no-repeat;
+}
+
+.filtros-rubro li.categories,
+.filtros li.categories {
+    color: #5fa099;
+    font-family: 'Signika-Bold';
+    font-size: 18px;
+}
+
+.tipo-hide,
+.rubro-hide {
+    display: none;
+}
+
+.page-template-desarrollos .destacada {
+    background: #c7c7c7;
+}
+
+.page-template-desarrollos .destacada img {
+    float: left;
+}
+
+.page-template-desarrollos .destacada .content-title h4 {
+    font-size: 38px;
+    font-family: 'Signika-Regular';
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}
+
+.page-template-desarrollos .destacada .entry-title {
+    font-size: 38px;
+    font-family: 'Signika-Regular';
+    color: #5fa099;
+    text-shadow: 2px 2px #000;
+}
+
+.page-template-desarrollos .destacada {
+    position: relative;
+}
+
+.page-template-desarrollos .destacada .box-color {
+    background:  #41e0cc;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 322px;
+    height: 30px;
+}
+
+.page-template-desarrollos .content-list article:first-child {
+    padding-top: 50px;
+}
+
+
+/* la empresa */
+.page-template-empresa .site-content article {
+    background: #fff;
+    font-family: 'Signika-Light';
+    font-size: 14px;
+    /*padding: 0 164px 0 56px;*/
+}
+
+.page-template-empresa .slider-text {
+    margin-top: 5px;
+}
+
+.page-template-empresa .slider-text span {
+    font-size: 18px;
+    border-left: 1px solid #9b9b9b;
+    color: #9b9b9b;
+    padding-left: 20px;
+    height: 34px;
+    line-height: 34px;
+    display: inline-block;
+    width: 25%;
+}
+
+.page-template-empresa .slider-text .selected {
+    color: #5fa099;
+    border-left: 1px solid #5fa099;
+}
