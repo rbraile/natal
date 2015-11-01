@@ -28,7 +28,7 @@ get_header(); ?>
                                     <div class="content-news">
                                         <p><?php the_time('j F, Y'); ?></p>
                                         <h2 class="entry-title">
-                                            <?php the_title();?>
+                                            <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
                                         </h2>
                                         <div class="resumen">
                                             <p><?php echo get_post_meta($post->ID, "destacado", true); ?></p>
