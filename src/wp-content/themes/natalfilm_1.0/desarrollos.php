@@ -75,6 +75,7 @@ get_header(); ?>
                     <?php wp_list_categories('child_of=9&title_li=x Industria'); ?> 
                 </ul>
                 <div class="content-img">
+                    <p><span>Socios de Ecoplast</span> Participamos del programa polietileno Reciclable</p>
                     <img width="230" src="<?php echo get_bloginfo('template_url'); ?>/images/ecoplas.jpg" />
                 </div>
             </div>

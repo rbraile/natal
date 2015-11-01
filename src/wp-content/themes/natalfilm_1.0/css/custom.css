@@ -2,8 +2,12 @@ a {
     cursor: pointer;
 }
 
-#page {
+body {
     background: #f5f5f5;
+}
+
+#page {
+    background: transparent;
 }
 
 #masthead { 
@@ -37,6 +41,11 @@ a {
     min-height: 34px;
 }
 
+
+.home .content-header .content-title .site-title {
+    margin: 0;
+    padding: 0 0 30px 0; 
+}
 /* menu */
 
 #menu-menu-principal #menu-item-9 {
@@ -240,6 +249,17 @@ div.nav > ul {
     font-size: 12px;
 }
 
+.data-fiscal-content {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.data-fiscal-content .menu-data-fiscal-container {
+    position: absolute;
+    top: 90px;
+    left: 30px;
+}
+
 .left-col {
     float: left;
     width: 800px;
@@ -383,6 +403,16 @@ div.nav > ul {
     width: 60px;
 }
 
+.page-template-como-trabajamos .content-medios .text-right{
+    float: right;
+    padding-right: 18px;
+    width: 168px;
+}
+
+.page-template-como-trabajamos .content-medios .text-right a {
+    display: block;
+}
+
 .page-template-como-trabajamos .contant-list a,
 .page-template-como-trabajamos .contant-list p {
     padding: 0;
@@ -401,7 +431,7 @@ div.nav > ul {
 
 .page-template-como-trabajamos .contant-list .content-img {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 26px;
 }
 
 .page-template-como-trabajamos .content-medios li {
@@ -539,6 +569,15 @@ div.nav > ul {
     margin: 20px 0;
     padding: 20px 124px;
     position: relative;
+}
+
+.banner-middle a {
+    color: #fff;
+}
+
+.banner-middle a:hover {
+    color: #fff;
+    text-decoration: none;
 }
 
 .banner-middle p {
@@ -762,6 +801,20 @@ div.nav > ul {
     border-top: 8px solid #f5f5f5;
 }
 
+.page-template-desarrollos .sidebar .content-img p {
+    font-family: 'Signika-Regular';
+    font-size: 15px;
+    color: #000;
+    background: #f5f5f5;
+    padding-bottom: 10px;
+}
+
+.page-template-desarrollos .sidebar .content-img span {
+    background: url(../images/arrow-green.png) no-repeat left center;
+    color: #5fa090;
+    padding-left: 12px;
+}
+
 .page-template-desarrollos .sidebar .content-subcat {
     background: #fff;
 }
@@ -850,11 +903,36 @@ div.nav > ul {
     background: #fff;
     font-family: 'Signika-Light';
     font-size: 14px;
-    /*padding: 0 164px 0 56px;*/
+    padding: 0 30px 0 60px;
+}
+
+.page-template-empresa .site-content article p {
+    font-family: 'Signika-Light';
+    font-size: 14px;
+    color: #000;
+    margin: 20px 0;
+}
+
+.page-template-empresa .site-content article h2 {
+    font-family: 'Signika-Regular';
+    font-size: 18px;
+    color: #5fa099;
+    margin-top: 0;
+}
+
+.page-template-empresa .site-content article ul {
+    list-style: none;
+    margin: 0;
+    padding:  0 0 0 15px;
+}
+
+.page-template-empresa .site-content article ul li {
+    background: url("../images/bullet-green.png") left center no-repeat;
+    padding-left: 10px;  
 }
 
 .page-template-empresa .slider-text {
-    margin-top: 5px;
+    margin: 5px 0 90px;
 }
 
 .page-template-empresa .slider-text span {
@@ -871,6 +949,88 @@ div.nav > ul {
 .page-template-empresa .slider-text .selected {
     color: #5fa099;
     border-left: 1px solid #5fa099;
+}
+
+.page-template-empresa .sidebar {
+    width: 220px;
+}
+
+.page-template-empresa .content-subcat {
+    background: #fff;
+}
+
+.page-template-empresa .content-subcat h4 {
+    background: #5fa099;
+    color: #fff;
+    font-family: 'Signika-Semibold';
+    font-size: 18px;
+    padding: 10px 20px 6px;
+    margin: 0 0 8px;
+}
+
+.page-template-empresa .content-subcat ul {
+    list-style: none;
+    padding-left: 10px; 
+}
+.page-template-empresa .content-subcat ul li {
+    position: relative;
+    border-bottom: 2px solid #f5f5f5;     
+    height: 62px;
+}
+
+.page-template-empresa .content-subcat ul li p {
+    padding: 10px 0 0 64px;
+    font-size: 14px;
+
+}
+
+.page-template-empresa .content-subcat ul li span {
+    background: url("../images/sp-empresa-menu.png") no-repeat;
+    position: absolute;
+    top: 14px;
+    left: 10px;
+}
+
+.page-template-empresa .content-subcat ul li.trabajo span {
+    background-position: 0 0; 
+    height: 31px;
+    width: 30px;
+}
+
+.page-template-empresa .content-subcat ul li.estudio span {
+    background-position: 0 -32px; 
+    height: 22px;
+    width: 34px;   
+    top: 21px;
+}
+
+.page-template-empresa .content-subcat ul li.proceso span {
+    background-position: 0 -55px; 
+    width: 28px;   
+    height: 32px;
+}
+
+.page-template-empresa .content-subcat ul li.recursos span {
+    background-position: -2px -88px; 
+    width: 33px;   
+    height: 29px;
+}
+
+.page-template-empresa .content-subcat ul li.metodo span {
+    background-position: -2px -118px; 
+    width: 30px;   
+    height: 31px;
+}
+
+.page-template-empresa .content-subcat ul li.logistica span {
+    background-position: 0 -150px; 
+    width: 41px;   
+    height: 29px;
+}
+
+.page-template-empresa .content-subcat .content-img {
+    padding-top: 26px;
+    background: #f5f5f5;
 }
 
 /*  eco news */
@@ -898,16 +1058,23 @@ div.nav > ul {
     padding: 40px 20px 40px 60px;
 }
 
-
 .page-template-econews .content-news {
     float: right;
     width: 360px;
 }
 
-.page-template-econews .entry-title {
+.page-template-econews .content-news .entry-title {
+    line-height: 21px;
+}
+
+.page-template-econews .entry-title a {
     font-family: 'Signika-Regular';
     font-size: 21px;
     color: #1f374e;
+}
+
+.page-template-econews .entry-title a:hover {
+    text-decoration: none;
 }
 
 .page-template-econews .resumen p {
@@ -951,8 +1118,9 @@ div.nav > ul {
     background: url("../images/arrows-econews.jpg") left bottom 7px no-repeat;
 }
 
-
-
+.post-page-content.mobile .eco-news .post-thumbnail {
+    width: 64px;
+}
 
 
 

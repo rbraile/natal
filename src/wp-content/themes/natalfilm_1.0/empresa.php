@@ -29,15 +29,17 @@ get_header(); ?>
         </div><!-- #content -->
         <div class="sidebar">
             <div class="content-subcat">
-                <h4>Nuestros dearrollos</h4>
-                <ul class="filtros">
-                    <?php wp_list_categories('child_of=12&title_li=x Material'); ?> 
-                </ul>
-                <ul class="filtros-rubro">
-                    <?php wp_list_categories('child_of=9&title_li=x Industria'); ?> 
+                <h4>Nuestros Servicios</h4>
+                <ul class="servicios">
+                    <li class="trabajo"><span></span> <p>Trabajo <br />personalizado</p></li>
+                    <li class="estudio"><span></span> <p>Estudio previo de cada trabajo realizar</p></li>
+                    <li class="proceso"><span></span> <p>Proceso <br />de preprensa</p></li>
+                    <li class="recursos"><span></span> <p>Recursos tecnológicos de primera línea</p></li>
+                    <li class="metodo"><span></span> <p>Método de productivo Just in time</p></li>
+                    <li class="logistica"><span></span> <p>Logística moderna a nivel nacional</p></li>
                 </ul>
                 <div class="content-img">
-                    <img width="230" src="<?php echo get_bloginfo('template_url'); ?>/images/ecoplas.jpg" />
+                    <img width="230" src="<?php echo get_bloginfo('template_url'); ?>/images/logo-envases-amigables.png" />
                 </div>
             </div>
         </div>

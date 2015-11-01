@@ -256,6 +256,14 @@ function twentythirteen_widgets_init() {
         'before_title'  => '<h3>',
         'after_title'   => '</h3>',
     ) );
+
+    register_sidebar( array(
+        'name'          => __( 'data fiscal', 'twentythirteen' ),
+        'id'            => 'data-fiscal',
+        'description'   => __( 'aparecera en el footer.', 'twentythirteen' ),
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ) );
 }
 add_action( 'widgets_init', 'twentythirteen_widgets_init' );
 
