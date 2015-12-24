@@ -1,5 +1,19 @@
-#page {
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
     background: #f5f5f5;
+}
+
+#page {
+    background: transparent;
+    width: 100%;
+    max-width: inherit;
 }
 
 #masthead { 
@@ -21,6 +35,7 @@
 .content-header {
     width: 940px;
     margin: 0 auto;
+    padding: 24px 0;
 }
 
 #masthead a.home-link{
@@ -28,11 +43,32 @@
     display: block;
     text-indent: -9999em;
     float: left;
-    width: 266px;
-    min-height: 34px;
+    width: 347px;
+    min-height: 44px;
 }
 
+
+.home .content-header .content-title .site-title {
+    margin: 0;
+    padding: 0 0 30px 0; 
+}
 /* menu */
+
+#nav_menu-3 {
+    background-color: transparent;
+    margin: 10px 0 0;
+    padding: 0;
+    float: right;
+}
+
+#menu-top-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#menu-menu-principal {
+    margin: 10px 0;
+}
 
 #menu-menu-principal #menu-item-9 {
     background: #41e0cc;
@@ -41,7 +77,7 @@
 }
 
 #menu-menu-principal #menu-item-9 a {
-    color: #9b9b9b;
+    color: #fff;
     padding: 0 16px;
     margin-right: 0;
     text-align: center;
@@ -122,7 +158,7 @@ div.nav > ul {
     background: #5fa099 none repeat scroll 0 0;
     box-sizing: border-box;
     color: #fff;
-    content: "Maras que confian en nosotros";
+    content: "Marcas que confian en nosotros";
     display: block;
     float: right;
     font-family: 'Signika-Regular';
@@ -235,6 +271,17 @@ div.nav > ul {
     font-size: 12px;
 }
 
+.data-fiscal-content {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.data-fiscal-content .menu-data-fiscal-container {
+    position: absolute;
+    top: 90px;
+    left: 30px;
+}
+
 .left-col {
     float: left;
     width: 800px;
@@ -275,6 +322,17 @@ div.nav > ul {
     float: left;
     padding: 40px;
     width: 670px;
+}
+
+.page-template-desarrollos .title-content h1.entry-title {
+    background: #5fa099;
+    color: #fff;
+    float:left;
+    font-family: 'Signika-Regular';
+    font-size: 28px;
+    margin-bottom: 0;
+    padding: 20px 0 10px 10px;
+    width: 270px;
 }
 
 .page-template-como-trabajamos .contenido .left > h3 {
@@ -343,6 +401,13 @@ div.nav > ul {
     top: 1208px;
     left: 224px;
     width: 370px;
+    line-height: 24px;
+}
+
+.page-template-como-trabajamos .contenido .content-images .text6 {
+    top: 1442px;
+    left: 400px;
+    width: 180px;
 }
 
 .page-template-como-trabajamos .sidebar {
@@ -367,6 +432,16 @@ div.nav > ul {
     width: 60px;
 }
 
+.page-template-como-trabajamos .content-medios .text-right{
+    float: right;
+    padding-right: 18px;
+    width: 168px;
+}
+
+.page-template-como-trabajamos .content-medios .text-right a {
+    display: block;
+}
+
 .page-template-como-trabajamos .contant-list a,
 .page-template-como-trabajamos .contant-list p {
     padding: 0;
@@ -385,7 +460,7 @@ div.nav > ul {
 
 .page-template-como-trabajamos .contant-list .content-img {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 26px;
 }
 
 .page-template-como-trabajamos .content-medios li {
@@ -407,15 +482,65 @@ div.nav > ul {
 
 /* home page */
 
+.content-header .frase {
+    font-family: 'Signika-Light';
+    font-size: 14px;
+    color: #969696;
+    float: left;
+    border-left: 1px solid #969696;
+    margin-left: 22px;
+    margin-top: 5px;
+    padding-left: 10px;
+    line-height: 15px;lim 
+}
+
 .home-page .site-content {
     width: 940px;
     margin: 0 auto;
+}
+
+.home-page .master-slider-parent {
+    cursor: pointer;
+}
+
+.home-page p,
+.home-page img {
+    margin: 0;
+}
+
+.home-page ul {
+    margin: 0;
+}
+
+.home-page .content-image {
+    position: relative;
+}
+
+.home-page .content-image p {
+    position: absolute;
+    font-family: 'Signika-Regular';
+    font-size: 34px;
+    top: 26px;
+    left: 26px;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}
+
+.home-page .content-image p span {
+    font-family: 'Signika-Bold';
+}
+
+.home-page .content-image p.no-position {
+    position: inherit;
+    left: inherit;
+    top: inherit;
 }
 
 .images-right {
     float: right;
     background: #c6c6c6;
     position: relative;
+    width: 470px;
 }
 
 .images-right h3 {
@@ -452,6 +577,7 @@ div.nav > ul {
 }
 
 .double-row-last {
+    background: url("../images/home-porque-elegirnos_fondo.jpg") bottom left no-repeat;
     width: 50%;
     float: left;
     padding-left: 20px;
@@ -469,11 +595,25 @@ div.nav > ul {
     color: #22384e;
 }
 
+.double-row-last h3 a:hover {
+    color: #22384e;
+}
+
 .banner-middle {
     background: #22384e;
     margin: 20px 0;
-    padding: 20px 124px;
+    padding: 20px 120px;
     position: relative;
+    cursor: pointer;
+}
+
+.banner-middle a {
+    color: #fff;
+}
+
+.banner-middle a:hover {
+    color: #fff;
+    text-decoration: none;
 }
 
 .banner-middle p {
@@ -594,11 +734,14 @@ div.nav > ul {
 
 /* Desarrollos*/
 
+.single .content-area,
+.page-template-empresa .content-area,
 .page-template-desarrollos .content-area {
     width: 940px;
     margin: 0 auto;
 }
 
+.page-template-empresa .site-content,
 .page-template-desarrollos .site-content {
     width: 700px;
     float: left;
@@ -656,7 +799,7 @@ div.nav > ul {
     border-bottom: 2px solid #f5f5f5;
 }
 
-.page-template-desarrollos .title-content h1.entry-title {
+.page-template .title-content h1.entry-title {
     background: #fff;
     color: #5fa099;
     float:left;
@@ -667,7 +810,7 @@ div.nav > ul {
     width: 270px;
 }
 
-.page-template-desarrollos .title-content .frase {
+.page-template .title-content .frase {
     font-size: 21px;
     font-family: 'Signika-Regular';
     float:left;
@@ -693,6 +836,24 @@ div.nav > ul {
     width: 230px;
     background: #fff;
     border-top: 8px solid #f5f5f5;
+}
+
+.page-template-desarrollos .sidebar .content-img p {
+    font-family: 'Signika-Regular';
+    font-size: 15px;
+    color: #000;
+    background: #f5f5f5;
+    padding-bottom: 10px;
+}
+
+.page-template-desarrollos .sidebar .content-img span {
+    background: url(../images/arrow-green.png) no-repeat left center;
+    color: #5fa090;
+    padding-left: 12px;
+}
+
+.page-template-desarrollos .sidebar .content-img a:hover {
+    text-decoration: none;
 }
 
 .page-template-desarrollos .sidebar .content-subcat {
@@ -739,6 +900,11 @@ div.nav > ul {
     display: none;
 }
 
+.category-destacada.tipo-hide,
+.category-destacada.rubro-hide {
+    display: block;
+}
+
 .page-template-desarrollos .destacada {
     background: #c7c7c7;
 }
@@ -777,4 +943,309 @@ div.nav > ul {
 .page-template-desarrollos .content-list article:first-child {
     padding-top: 50px;
 }
+
+/* la empresa */
+.page-template-empresa .site-content article {
+    background: #fff;
+    font-family: 'Signika-Light';
+    font-size: 14px;
+    padding: 0 30px 0 60px;
+}
+
+.single p,
+.page-template-empresa .site-content article p {
+    font-family: 'Signika-Light';
+    font-size: 14px;
+    color: #000;
+    margin: 20px 0;
+}
+
+.page-template-empresa .site-content article h2 {
+    font-family: 'Signika-Regular';
+    font-size: 18px;
+    color: #5fa099;
+    margin-top: 0;
+}
+
+.page-template-empresa .site-content article ul {
+    list-style: none;
+    margin: 0;
+    padding:  0 0 0 15px;
+}
+
+.page-template-empresa .site-content article ul li {
+    background: url("../images/bullet-green.png") left center no-repeat;
+    padding-left: 10px;  
+}
+
+.page-template-empresa .slider-text {
+    margin: 5px 0 90px;
+}
+
+.page-template-empresa .slider-text a.slide {
+    font-size: 18px;
+    border-left: 1px solid #9b9b9b;
+    color: #9b9b9b;
+    padding-left: 20px;
+    height: 34px;
+    line-height: 34px;
+    display: inline-block;
+    width: 25%;
+}
+
+.page-template-empresa .slider-text a.slide:hover {
+    text-decoration: none;
+}
+
+.page-template-empresa .slider-text .selected {
+    color: #5fa099;
+    border-left: 1px solid #5fa099;
+}
+
+.page-template-empresa .sidebar {
+    width: 220px;
+}
+
+.page-template-empresa .content-subcat {
+    background: #fff;
+}
+
+.page-template-empresa .content-subcat h4 {
+    background: #5fa099;
+    color: #fff;
+    font-family: 'Signika-Semibold';
+    font-size: 18px;
+    padding: 10px 20px 6px;
+    margin: 0 0 8px;
+}
+
+.page-template-empresa .content-subcat ul {
+    list-style: none;
+    padding-left: 10px; 
+}
+.page-template-empresa .content-subcat ul li {
+    position: relative;
+    border-bottom: 2px solid #f5f5f5;     
+    height: 62px;
+}
+
+.page-template-empresa .content-subcat ul li p {
+    padding: 10px 0 0 64px;
+    font-size: 14px;
+
+}
+
+.page-template-empresa .content-subcat ul li span {
+    background: url("../images/sp-empresa-menu.png") no-repeat;
+    position: absolute;
+    top: 14px;
+    left: 10px;
+}
+
+.page-template-empresa .content-subcat ul li.trabajo span {
+    background-position: 0 0; 
+    height: 31px;
+    width: 30px;
+}
+
+.page-template-empresa .content-subcat ul li.estudio span {
+    background-position: 0 -32px; 
+    height: 22px;
+    width: 34px;   
+    top: 21px;
+}
+
+.page-template-empresa .content-subcat ul li.proceso span {
+    background-position: 0 -55px; 
+    width: 28px;   
+    height: 32px;
+}
+
+.page-template-empresa .content-subcat ul li.recursos span {
+    background-position: -2px -88px; 
+    width: 33px;   
+    height: 29px;
+}
+
+.page-template-empresa .content-subcat ul li.metodo span {
+    background-position: -2px -118px; 
+    width: 30px;   
+    height: 31px;
+}
+
+.page-template-empresa .content-subcat ul li.logistica span {
+    background-position: 0 -150px; 
+    width: 41px;   
+    height: 29px;
+}
+
+.page-template-empresa .content-subcat .content-img {
+    padding-top: 26px;
+    background: #f5f5f5;
+}
+
+/*  eco news */
+
+.page-template .title-content h1.entry-title {
+    color: #f5f5f5;
+    background: #41e5d1;
+    border-radius: 20px 20px 0 0;
+}
+
+.page-template-econews .entry-thumbnail {
+    float: left;
+}
+
+.page-template-econews .list-news {
+    float: left;
+    width: 700px;
+    background: #fff;
+}
+.page-template-econews .list-news article {
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.page-template-econews .list-news article .destacada {
+    padding: 40px 20px 40px 60px;
+}
+
+.page-template-econews .list-news article h2 {
+    margin: 0;
+}
+
+.page-template-econews .list-news article h2 a {
+    color: #22384e;
+    font-family: "Signika-Regular";
+    font-size: 24px;
+    margin: 0;
+    line-height: 1;
+}
+
+.page-template-econews .content-news {
+    float: right;
+    width: 360px;
+}
+
+.page-template-econews .content-news .entry-title {
+    line-height: 21px;
+}
+
+.page-template-econews .entry-title a {
+    font-family: 'Signika-Regular';
+    font-size: 21px;
+    color: #1f374e;
+}
+
+.page-template-econews .entry-title a:hover {
+    text-decoration: none;
+}
+
+.page-template-econews .resumen p {
+    font-family: 'Signika-Light';
+    font-size: 13px;
+    color:#707070; 
+}
+
+.page-template-econews .sidebar {
+    width: 220px;
+}
+
+.page-template-econews .content-subcat {
+    background: #fff;
+}
+
+.page-template-econews .content-subcat h4 {
+    background: #5fa099;
+    color: #fff;
+    font-family: 'Signika-Semibold';
+    font-size: 18px;
+    padding: 10px 20px 6px;
+    margin: 0 0 8px;
+}
+
+.page-template-econews .content-subcat ul {
+    list-style: none;
+    padding: 0;
+}
+
+.page-template-econews .content-subcat ul li {
+    border-bottom: 2px solid #f5f5f5;
+    padding: 4px 0 4px 26px;
+}
+
+.page-template-econews .content-subcat ul li a {
+    font-size: 14px;
+    color: #333;
+    font-family: 'Signika-Light'; 
+    padding-left: 10px;
+    background: url("../images/arrows-econews.jpg") left bottom 7px no-repeat;
+}
+
+.econews-destacada {
+    position: relative;
+    height: 344px;
+}
+
+.econews-destacada p {
+    position: absolute;
+    top: 45px;
+    background: #fff;
+    padding: 4px;
+    margin: 0;
+    color: #5fa099; 
+    left: 50%;
+    font-size: 14px;
+    font-family: 'Signika-Regular';
+}
+
+.econews-destacada h2 {
+    top: 90px;
+    margin: 0;
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    width: 50%;
+    font-size: 38px;
+    font-family: 'Signika-Regular';
+    font-weight: initial;
+    padding-right: 30px;
+    line-height: 42px;
+}
+
+
+.econews-destacada .box-color {
+    background: #41e0cc url("../images/plus-big.png") no-repeat right 10px center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 55%;
+    height: 40px;
+}
+
+.post-page-content.mobile .eco-news .post-thumbnail {
+    width: 64px;
+}
+
+.single h2 {
+   color: #5fa099;
+   font-family: "Signika-Regular";
+   font-size: 18px;
+   margin-top: 0;
+}
+
+.single .entry-title {
+    color: #22384e;
+    font-family: "Signika-Regular";
+    font-size: 24px;
+    margin: 30px 0 0;
+}
+
+.single .content-area {
+    background: #fff;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+
+
 

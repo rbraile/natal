@@ -13,7 +13,14 @@
 		</div><!-- #main -->
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="footer-content">
-                <h4>Contactanos</h4>
+
+                <?php if ( is_active_sidebar( 'data-fiscal' ) ) : ?>
+                    <div class="data-fiscal-content">
+                        <?php dynamic_sidebar( 'data-fiscal' ); ?>
+                    </div>
+                <?php endif; ?>
+
+                <h4><a href="/contactenos">Contactanos</a></h4>
                 <p class="contacto">+54 11 4747 2815</p>
                 <p class="contacto">info@natalfilm.com.ar</p>
                 <div class="address">

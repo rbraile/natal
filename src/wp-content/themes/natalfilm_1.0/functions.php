@@ -256,6 +256,24 @@ function twentythirteen_widgets_init() {
         'before_title'  => '<h3>',
         'after_title'   => '</h3>',
     ) );
+
+    register_sidebar( array(
+        'name'          => __( 'data fiscal', 'twentythirteen' ),
+        'id'            => 'data-fiscal',
+        'description'   => __( 'aparecera en el footer.', 'twentythirteen' ),
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => __( 'menu de top links', 'twentythirteen' ),
+        'id'            => 'top-links',
+        'description'   => __( 'aparecera en la pagina de contacto.', 'twentythirteen' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ) );
 }
 add_action( 'widgets_init', 'twentythirteen_widgets_init' );
 
@@ -276,13 +294,13 @@ function twentythirteen_paging_nav() {
 		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'twentythirteen' ); ?></h1>
 		<div class="nav-links">
 
-			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentythirteen' ) ); ?></div>
-			<?php endif; ?>
+			<?php //if ( get_next_posts_link() ) : ?>
+			<!--div class="nav-previous"><?php //next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentythirteen' ) ); ?></div>
+			<?php //endif; ?>
 
-			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?></div>
-			<?php endif; ?>
+			<?php //if ( get_previous_posts_link() ) : ?>
+			<div class="nav-next"><?php // previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?></div>
+			<?php //endif; ?>
 
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
@@ -655,4 +673,6 @@ function catch_that_image() {
   }
   return $first_img;
 }
+
+
 

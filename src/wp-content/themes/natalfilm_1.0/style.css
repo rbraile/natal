@@ -3272,3 +3272,13 @@ footer.entry-meta {
         color: #333;
     }
 }
+
+.post-page-content.mobile .eco-news .post-thumbnail {
+    width: 64px;
+}
+
+@media screen and (max-width: 768px) {
+    .movile {
+        display: none !important    ;
+    }
+}

@@ -22,7 +22,7 @@ get_header(); ?>
                                 <?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
                                 <div class="left-col">
                                     <div class="contenido destacada clear">
-                                        <img src="<?php echo catch_that_image();?>" />
+                                        <a href="<?php echo catch_that_image();?>"><img src="<?php echo catch_that_image();?>" /></a>
                                         <div class="content-title">
                                             <h2 class="entry-title">
                                                 <?php the_title();?>
@@ -67,7 +67,7 @@ get_header(); ?>
         </div><!-- #content -->
         <div class="sidebar">
             <div class="content-subcat">
-                <h4>Nuestros dearrollos</h4>
+                <h4>Nuestros desarrollos</h4>
                 <ul class="filtros">
                     <?php wp_list_categories('child_of=12&title_li=x Material'); ?> 
                 </ul>
@@ -75,7 +75,8 @@ get_header(); ?>
                     <?php wp_list_categories('child_of=9&title_li=x Industria'); ?> 
                 </ul>
                 <div class="content-img">
-                    <img width="230" src="<?php echo get_bloginfo('template_url'); ?>/images/ecoplas.jpg" />
+                    <p><a href="http://www.ecoplas.org.ar" target="_blank"><span>Socios de Ecoplas</span></a> Participamos del programa polietileno Reciclable</p>
+                    <a target="_blank" href="http://www.ecoplas.org.ar"><img width="230" src="<?php echo get_bloginfo('template_url'); ?>/images/ecoplas.jpg" />
                 </div>
             </div>
         </div>

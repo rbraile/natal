@@ -28,6 +28,7 @@
 				$( '#colophon' ).css( 'margin-top', margin + 'px' );
 			}
 		}
+        
 	} );
 
 	/**
@@ -129,5 +130,13 @@
 			isRTL: body.is( '.rtl' )
 		} );
 	}
+
+    $('.master-slider-parent').click(function() {
+        location.href= '/nuestros-desarrollos';
+    });
+
+    $('.home-page .banner-middle').click(function() {
+        location.href= '/la-empresa';
+    });
 
 } )( jQuery );
